@@ -1,0 +1,63 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    margin: 0 0 200px 0;
+} 
+.row {
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.image {
+    float: left;
+    width: 49%;
+    margin-right: 2%;
+}
+.text {
+    float: left;
+    width: 49%;
+    height: 100px;
+}
+.full {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+
+div.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+div.flex-container > * {
+    width: 100%;
+}
+div.flex-container > *:not(:last-child) {
+    margin-bottom: 10px;
+}
+div.flex-container > *:nth-child(2) {
+    height: 100px;
+}
+div.image-text-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-flow: row nowrap;
+}
+div.image-text-wrapper > * {
+    width: 50%
+}
+div.image-text-wrapper > *:nth-child(2) {
+
+    padding-left: 20px;
+}

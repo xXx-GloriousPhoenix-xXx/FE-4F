@@ -1,0 +1,38 @@
+:root {
+    --first_row_col: #028f8f; /*#nn8f8f, nn=02 -> #028f8f*/
+    --second_row_col: #f5f502; /*#f5f5nn, nn=02 -> #f5f502*/
+    --first_row_col_inv: #c74c00;
+    --second_row_col_inv: #2e005c;
+}
+table {
+    border: 0.1em solid black;
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+}
+td {
+    text-align: center;
+    border: 0.1em solid black;
+    width: 25%;
+}
+table tr:first-child {
+    background-color: var(--first_row_col);
+    color: var(--first_row_col_inv);
+}
+table tr:first-child:hover {
+    color: var(--first_row_col);
+    background-color: var(--first_row_col_inv);
+}
+table tr:last-child {
+    background-color: var(--second_row_col);
+    color: var(--second_row_col_inv);
+}
+table tr:last-child:hover {
+    color: var(--second_row_col);
+    background-color: var(--second_row_col_inv);
+}
+body {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}

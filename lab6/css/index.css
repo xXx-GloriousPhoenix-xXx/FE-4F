@@ -1,0 +1,66 @@
+button {
+    background-color: pink;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    border: 0.15em solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 500ms;
+
+    color: black;
+}
+button:hover {
+    background-color: black;
+    color: pink;
+    cursor: pointer;
+}
+div.control-wrapper {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-flow: row nowrap;
+    padding: 8px;
+
+    width: 100%;
+    background-color: pink;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.05em 0.1em 0.1em 0.1em; 
+}
+svg {
+    width: 60%;
+    height: auto;
+}
+
+#content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-flow: row nowrap;
+
+    width: 100%;
+}
+div.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+
+    width: 20%;
+    padding: 8px;
+    background-color: pink;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.1em 0.05em 0.05em 0.05em;
+
+    height: auto;
+}
+div.profile img {
+    width: 80%;
+    aspect-ratio: 1;
+    border: 0.1em solid black;
+    margin: 8px 0;
+    background-color: white;
+}

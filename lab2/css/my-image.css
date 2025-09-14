@@ -1,0 +1,48 @@
+:root {
+    --image-bg-col: red;
+    --stroke-bg-col: white;
+}
+div.my-image-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-flow: row nowrap;
+    gap: 20px;
+}
+div.my-image {
+    width: 200px;
+    height: 200px;
+    background-color: var(--image-bg-col);
+}
+div.my-image.position {
+    position: relative;
+}
+div.stroke.position {
+    position: absolute;
+}
+div.stroke {
+    background-color: var(--stroke-bg-col);
+    border-radius: 0.5em;
+}
+div.horizontal {
+    width: 60%;
+    height: 20%;
+}
+div.position.horizontal {
+    top: 40%;
+    left: 20%;
+}
+div.vertical {
+    width: 20%;
+    height: 60%;
+}
+div.position.vertical {
+    top: 20%;
+    left: 40%;
+}
+div.transform.horizontal {
+    transform: translate(calc(100%/3), 200%);
+}
+div.transform.vertical {
+    transform: translate(200%, 0);
+}
