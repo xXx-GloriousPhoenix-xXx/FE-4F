@@ -1,8 +1,8 @@
 {
-  "name": "react-gh-pages",
+  "name": "lab7",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://xxx-gloriousphoenix-xxx.github.io/react-gh-pages",
+  "homepage": "https://xxx-gloriousphoenix-xxx.github.io/FE-4F/lab7",
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.8.0",
