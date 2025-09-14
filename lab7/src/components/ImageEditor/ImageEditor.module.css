@@ -1,0 +1,15 @@
+.ImageEditor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    gap: 10px;
+    width: 100%;
+    padding: 2em;
+}
+.ControlWrapper {
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    gap: 10px;
+}

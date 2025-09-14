@@ -1,0 +1,28 @@
+.ImageWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 1em;
+}
+.Wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+.Image {
+    width: 60%;
+}
+.TextWrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: left;
+
+    padding: 1em;
+}
+.Paragraph{
+    text-indent: 2em;
+    text-align: justify;
+    margin: 10px 0;
+}
