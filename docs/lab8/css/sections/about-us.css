@@ -1,0 +1,21 @@
+.about-us {
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80dvh;
+    flex-flow: row nowrap;
+}
+.about-us video {
+    height: 80%;
+    border-radius: 0.75dvw;
+}
+.about-us-text-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    background-color: var(--secondary_color_3_transparent);
+    width: 30%;
+    height: 80%;    
+    border-radius: 0.75dvw;
+    padding: 1.5dvw;
+}

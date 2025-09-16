@@ -1,0 +1,14 @@
+.bright-text {
+    color: var(--secondary_color_3); 
+    transition: 250ms;
+}
+.bright-text-hover:hover {
+    color: var(--secondary_color_1);
+}
+.dark-text {
+    color: var(--primary_color);
+    transition: 250ms;
+}
+.dark-text-hover:hover {
+    color: var(--secondary_color_3);
+} 
