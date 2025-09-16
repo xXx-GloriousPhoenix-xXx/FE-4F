@@ -28,21 +28,21 @@
 }
 .gallery-grid-top-left {
     grid-area: tl;
-    background-image: url('../img/gallery/choosing-place.webp');
+    background-image: url('../../img/gallery/choosing-place.webp');
 }
 .gallery-grid-bottom-left {
     grid-area: bl;
-    background-image: url('../img/gallery/tent-putting.webp');
+    background-image: url('../../img/gallery/tent-putting.webp');
 }
 .gallery-grid-top-right {
     grid-area: tr;
-    background-image: url('../img/gallery/campfire-making.jpg');
+    background-image: url('../../img/gallery/campfire-making.jpg');
 }
 .gallery-grid-bottom-middle {
     grid-area: bm;
-    background-image: url('../img/gallery/camping-stove-cooking.jpg');
+    background-image: url('../../img/gallery/camping-stove-cooking.jpg');
 }
 .gallery-grid-bottom-right {
     grid-area: br;
-    background-image: url('../img/gallery/camp-relaxing.webp');
+    background-image: url('../../img/gallery/camp-relaxing.webp');
 }
