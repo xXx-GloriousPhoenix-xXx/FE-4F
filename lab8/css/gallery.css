@@ -1,14 +1,48 @@
 .gallery {
     flex-flow: column nowrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 
-    height: 50dvh;
-    background-color: var(--secondary_color_1);
+    height: 100dvh;
 }
 .gallery h1 {
     margin: 0;
 }
 .gallery p {
     margin: 0.5dvw 0;
+}
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2fr 1fr 2fr;
+    grid-template-areas: "tl tr tr"
+                         "bl tr tr"
+                         "bl bm br";
+    width: 80%;
+    height: 80%;
+    gap: 1dvw;
+}
+.gallery-grid > div {
+    background-size: cover;
+    background-position: center;
+}
+.gallery-grid-top-left {
+    grid-area: tl;
+    background-image: url('../img/gallery/choosing-place.webp');
+}
+.gallery-grid-bottom-left {
+    grid-area: bl;
+    background-image: url('../img/gallery/tent-putting.webp');
+}
+.gallery-grid-top-right {
+    grid-area: tr;
+    background-image: url('../img/gallery/campfire-making.jpg');
+}
+.gallery-grid-bottom-middle {
+    grid-area: bm;
+    background-image: url('../img/gallery/camping-stove-cooking.jpg');
+}
+.gallery-grid-bottom-right {
+    grid-area: br;
+    background-image: url('../img/gallery/camp-relaxing.webp');
 }
