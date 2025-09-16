@@ -1,0 +1,14 @@
+.gallery {
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    height: 50dvh;
+    background-color: var(--secondary_color_1);
+}
+.gallery h1 {
+    margin: 0;
+}
+.gallery p {
+    margin: 0.5dvw 0;
+}

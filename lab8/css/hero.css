@@ -1,0 +1,34 @@
+.hero img {
+    width: 100%;
+}
+.hero-text-wrapper {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 1.25dvw;
+    border-radius: 1dvw;
+    font-size: 1.5dvw;
+}
+.hero-text-wrapper h1,
+.hero-text-wrapper p,
+.hero-text-wrapper span {
+    text-shadow: 2px 2px 8px black;
+    margin: 0;
+}
+.hero-main-text-wrapper {
+    margin: 0.25em 0 1em 0;
+}
+.hero-text-wrapper > button {
+    background-color: transparent;
+    border: 0.2dvw solid var(--secondary_color_3);
+    cursor: pointer;
+    border-radius: 1dvw;
+    padding: 0.25em 0.5em;
+    font-weight: bold;
+}
+.hero-text-wrapper > button:hover {
+    border-color: var(--secondary_color_1);
+}
