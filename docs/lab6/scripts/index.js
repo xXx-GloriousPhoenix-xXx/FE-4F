@@ -3,7 +3,6 @@ const reloadButton = document.getElementById('reload-button');
 
 const profilesQuantity = 5;
 
-window.addEventListener('load', () => updateContent());
 const updateContent = async () => {
     contentDiv.innerHTML = '';
 
@@ -48,4 +47,6 @@ const getProfiles = async (resultsQuantity) => {
         }
     })
 }
+
+window.addEventListener('load', () => updateContent());
 reloadButton.addEventListener('click', async () => updateContent());
