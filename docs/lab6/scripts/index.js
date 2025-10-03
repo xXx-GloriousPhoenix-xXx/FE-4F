@@ -48,5 +48,5 @@ const getProfiles = async (resultsQuantity) => {
     })
 }
 
-window.addEventListener('load', () => updateContent());
+window.addEventListener('load', async () => updateContent());
 reloadButton.addEventListener('click', async () => updateContent());
