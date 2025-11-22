@@ -4,9 +4,10 @@
 }
 div.my-image-container {
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     flex-flow: row nowrap;
+    width: 100%;
     gap: 20px;
 }
 div.my-image {
