@@ -5,6 +5,7 @@ table {
     width: fit-content;
     align-self: stretch;
     aspect-ratio: 1;
+    box-shadow: var(--primarycol) 0.5em 0.5em 1em 0.25em;
 }
 td {
     border: 0.1em solid var(--primarycol);
