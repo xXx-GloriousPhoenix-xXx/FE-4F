@@ -1,0 +1,32 @@
+:root {
+    --primarycol: royalblue;
+    --secondarycol: #1f1e4f;
+    --rightcol: #24a81b;
+    --wrongcol: #9c1e28;
+}
+*, *::before, *::after {
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    scrollbar-width: thin;
+}
+body {
+    font-size: 16px;
+    font-family: 'EB Garamond';
+    color: var(--secondarycol);
+    height: 100dvh;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--secondarycol);
+    width: 100%;
+    height: 100%;
+}
+.wrapper {
+    display: flex;
+    padding: 1em;
+}

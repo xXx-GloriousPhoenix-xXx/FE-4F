@@ -1,0 +1,19 @@
+table {
+    border-collapse: collapse;
+    border: 0.1em solid var(--primarycol);
+    height: auto;
+    width: fit-content;
+    align-self: stretch;
+    aspect-ratio: 1;
+}
+td {
+    border: 0.1em solid var(--primarycol);
+    color: var(--primarycol);
+    text-align: center;
+    transition: 250ms;
+    width: 3em;
+    height: fit-content;
+}
+#color-picker, #column-color-picker {
+    display: none;
+}

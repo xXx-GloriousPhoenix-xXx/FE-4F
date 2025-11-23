@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 5</title>
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/my-form.css">
+    <link rel="stylesheet" href="css/my-table.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="my-form">
+            <form id="my-form">
+                <input type="text" id="full-name" placeholder="ТТТТТТ Т.Т." required>
+                <input type="text" id="group-name" placeholder="ТТ-ЧЧ" required>
+                <input type="text" id="phone-number" placeholder="(ЧЧЧ)-ЧЧЧ-ЧЧ-ЧЧ" required>
+                <input type="text" id="id-card" placeholder="ТТ №ЧЧЧЧЧЧ" required>
+                <input type="text" id="faculty" placeholder="ТТТТ" required>
+                <button type="submit" id="my-form-submit">Перевірити</button>
+            </form>
+            <div class="error-div">
+                <output id="error-message">Помилок нема.</output>
+            </div>
+        </div>
+        <table id="my-table"></table>
+        <input type="color" id="color-picker">
+        <input type="color" id="column-color-picker">
+    </div>
+    <script src="script/my-form.js"></script>
+    <script src="script/my-table.js"></script>
+</body>
+</html>

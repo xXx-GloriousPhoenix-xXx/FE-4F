@@ -1,0 +1,79 @@
+.form.wrapper {
+    border: 0.1em solid var(--primarycol);
+    border-radius: 1em;
+    padding: 2em;
+    box-shadow: var(--primarycol) 0.5em 0.5em 1em 0.25em;
+}
+.field.wrapper {
+    padding: 0;
+    flex-flow: column nowrap;
+    gap: 0.15em;
+    z-index: 2;
+    position: relative;
+    background-color: var(--secondarycol);
+}
+.field.wrapper::after {
+    position: absolute;
+    top: 1.65em;
+    right: 0em;
+    transition: 250ms;
+    padding: 0.25em 0.5em;
+    border-radius: 1em;
+    width: 14em;
+    height: 2em;
+    border: 0.1em solid var(--primarycol);
+    color: var(--primarycol);
+    text-align: right;
+}
+.field.wrapper.default::after {
+    background-color: var(--secondarycol);
+    content: "Поле не заповнено";
+}
+.field.wrapper.is-valid::after {
+    background-color: var(--rightcol);
+    content: "Заповнено правильно";
+}
+.field.wrapper.is-invalid::after {
+    background-color: var(--wrongcol);
+    content: "Заповнено неправильно";
+}
+.field.wrapper.modded::after {
+    width: 15em;
+    right: -1em;
+    padding: 0.25em 1.5em 0.25em 0;
+    color: var(--secondarycol);
+}
+.field.wrapper.is-invalid:hover::after {
+    transform: translateX(11em);
+}
+.field.wrapper.is-valid:hover::after {
+    transform: translateX(10em);
+}
+form {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1em;
+}
+label {
+    color: var(--primarycol);
+    padding-left: 0.75em;
+}
+input, button {
+    padding: 0.5em 1em;
+    background-color: var(--secondarycol);
+    border: 0.1em solid var(--primarycol);
+    color: var(--primarycol);
+    outline: none;
+    border-radius: 1em;
+    cursor: pointer;
+    transition: 100ms;
+    font-size: 1em;
+}
+input:hover, input:focus, button:hover {
+    background-color: var(--primarycol);
+    color: var(--secondarycol);
+}
+input {
+    z-index: 2;
+}
+
