@@ -1,0 +1,28 @@
+#layout {
+    width: fit-content;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    padding: 0.5em 0.75em;
+    background-color: var(--secondarycol);
+    border-radius: 3em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    gap: 1em;
+}
+.icon {
+    width: 2em;
+}
+.swap {
+    background: var(--primarycol);
+    aspect-ratio: 1;
+    border: 0.15em solid var(--secondarycol);
+    border-radius: 50%;
+    transition: 100ms;
+    cursor: pointer;
+}
+.swap:hover {
+    background-color: var(--secondarycol);
+    border-color: var(--primarycol);
+}

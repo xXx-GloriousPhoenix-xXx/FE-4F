@@ -4,6 +4,14 @@
     --first_row_col_inv: #c74c00;
     --second_row_col_inv: #2e005c;
 }
+*, *::before, *::after {
+    margin: 0;
+    box-sizing: border-box;
+}
+.html, body {
+    font-size: 16px;
+    font-family: 'EB Garamond';
+}
 table {
     border: 0.1em solid black;
     width: 100%;

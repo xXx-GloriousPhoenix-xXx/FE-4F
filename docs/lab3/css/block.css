@@ -1,0 +1,20 @@
+.block {
+    display: block;
+    padding: 1em;
+}
+.top.block.image {
+    float: left;
+    width: 25%;
+}
+.top.block.text {
+    float: right;
+    width: 75%;
+}
+.middle.block.text {
+    clear: both;
+    float: none;
+    width: 100%;
+}
+.bottom.block.image {
+    width: 100%;
+}

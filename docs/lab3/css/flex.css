@@ -1,0 +1,25 @@
+.wrapper {
+    display: flex;
+}
+.wrapper.image,
+.wrapper.text {
+    padding: 1em;
+}
+.wrapper.row {
+    flex-flow: row nowrap;
+}
+.wrapper.item {
+    flex-flow: column nowrap;
+}
+.top.wrapper.image {
+    width: 25%;
+}
+.top.wrapper.text {
+    width: 75%;
+}
+.middle.wrapper.text {
+    width: 100%;
+}
+.bottom.wrapper.image {
+    width: 100%;
+}
