@@ -1,70 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/index.css">
+    <meta name="description" content="Студент НТУУ КПІ Приходько Роман Юрійович.
+        Освіта, хобі, улюблені фільми та захоплення містом Харків. Персональна веб-сторінка студента групи ІП-34.">
+    <meta name="keywords" content="Приходько Роман, ІП-34, НТУУ КПІ, студент КПІ,
+        Харків, програмування, малювання, відеоігри, аніме фільми">
     <title>Приходько Р. Ю. ІП-34</title>
+
+    <link rel="stylesheet" href="./css/index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div>
-        <h2>Приходько Роман Юрійович</h2>
-        <p>Народився 09.01.2006 у місті Краматорськ</p>
-        <p id="third-element"> <!-- 3-ій елемент -->
-            Базова освіта - Краматорський ліцей №35 імені В. Шеймана
-            <br>
-            Вища освіта - НТУУ "КПІ імені Ігоря Сікорського"
-        </p>   
-    </div> 
-
-    <div>
-        <h3 class="Hobbies">Хобі</h3> <!-- 4-ий елемент -->
-        <ul>
-            <li>Малювання</li>
-            <li>Програмування</li>
-            <li>Відеоігри</li>
-        </ul> 
-    </div>   
-
-    <div>
-        <h3>Улюблені фільми</h3>
-        <ol>
-            <li>Твоє ім'я</li>
-            <li>Форма голосу</li>
-            <li>Дитя погоди </li>
-        </ol> 
-    </div>   
-
-    <div>
-        <p>
-            Харків – величне та славетне місто, що розкинулося на сході України. 
-            Це друге за кількістю мешканців місто України і йому є чим здивувати гостей. 
-            Могутнє, світле, мальовниче. Красується, милує людське око.
-        </p>
-        <p>
-            Не дарма Харків колись мав честь бути столицею України. 
-            І хоч не так довго, але залишив свій слід у історії нашої держави. 
-            Та радянські часи минули й столицю перенесли, але місто, 
-            як потужний промисловий центр, функціонує і далі, збагачує країну. 
-            Також Харків – це центр наукового та студентського самоврядування.
-        </p>
-    </div>
-
-    <div class="my-image">
-        <a class="image-ref" href="https://tripmydream.ua/ukraine/kharkiv/gallery">Сайтик</a>
-        <img src="./img/kharkiv.jpg" alt="Харків">
-    </div>
-
-    <div class="image-editor">
-        <div class="control-panel">
-            <button id="add-button">Додати</button>
-            <button id="increase-button">Збільшити</button>
-            <button id="decrease-button">Зменшити</button>
-            <button id="delete-button">Видалити</button>
-            <input type="text" placeholder="Посилання..." id="link-input">
+    <div class="wrapper all-width centered bordered info padded">
+        <div class="wrapper education">
+            <h2>Приходько Роман Юрійович</h2>
+            <p>Народився 09.01.2006 у місті Краматорськ</p>
+            <p>
+                Базова освіта - Краматорський ліцей №35 імені В. Шеймана<br>
+                Вища освіта - НТУУ "КПІ імені Ігоря Сікорського"
+            </p>
         </div>
-        <img src="./img/kharkiv-cut.png" alt="alt" id="image">
+        <div class="wrapper interest center">
+            <h3>Хобі</h3>
+            <ul>
+                <li>Малювання</li>
+                <li>Програмування</li>
+                <li>Відеоігри</li>
+            </ul>    
+        </div>
+        <div class="wrapper interest center">
+            <h3>Улюблені фільми</h3>
+            <ol>
+                <li>Твоє ім'я</li>
+                <li>Форма голосу</li>
+                <li>Дитя погоди </li>
+            </ol> 
+        </div>   
+    </div>
+    <div class="wrapper all-width bordered city list padded">
+        <div class="wrapper text all-width city item">
+            <h2 class="text-header">Харків</h2>
+            <p class="indented">Харків – величне та славетне місто, що розкинулося на сході України. Це друге за кількістю мешканців місто України і йому є чим здивувати гостей. Могутнє, світле, мальовниче. Красується, милує людське око.</p>
+            <p class="indented">Не дарма Харків колись мав честь бути столицею України. І хоч не так довго, але залишив свій слід у історії нашої держави. Та радянські часи минули й столицю перенесли, але місто, як потужний промисловий центр, функціонує і далі, збагачує країну. Також Харків – це центр наукового та студентського самоврядування.</p>
+            <p class="indented">А ще Харків – це місто з неймовірною енергетикою прогресу та творчості. Його часто називають «столицею українського конструкторського бюро» та «містом тисячі студентів». Легендарні вищі навчальні заклади, такі як ХНУ імені В. Н. Каразіна, Національний технічний університет «ХПІ», Політех та безліч інших, щороку випускають тисячі талановитих фахівців, чиї імена знають у всьому світі.</p>
+            <p class="indented">Серце міста – майдан Свободи, вражаючий своїм масштабом та архітектурою. А Госпром, справжній символ конструктивізму, мовчазний свідок історії, і сьогодні дивує своєю могутністю. Харківчани пишаються своїми парками – Шевченківським садом, садом ім. Т. Шевченка, лісопарком – улюбленими місцями відпочинку.</p>
+        </div>
+        <div class="wrapper photo city item">
+            <div class="wrapper center photo bordered">
+                <a class="photo" href="https://tripmydream.ua/ukraine/kharkiv/gallery">
+                    <img class="photo" src="./img/kharkiv.jpg" alt="Харків">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper all-width bordered centered padded">
+        <div class="wrapper centered editor">
+            <div id="wrapper" class="wrapper image">
+                <img id="image" class="photo" src="./img/kharkiv.jpg" alt="Харків">
+            </div>
+            <div class="wrapper control">
+                <button id="zoom-in" class="control">Збільшити</button>
+                <button id="zoom-out" class="control">Зменшити</button>
+                <button id="add" class="control">Додати</button>
+                <button id="remove" class="control">Видалити</button>
+            </div>
+        </div>
     </div>
     <script src="./script/index.js"></script>
 </body>
-</html> <!-- n = 122, (n%10 + 1) = 3 -->
+</html>

@@ -1,11 +1,9 @@
-class ImageEditor {
+class ImageZoom {
     constructor() {
         this.wrapper = document.getElementById('wrapper');
         this.image = document.getElementById('image');
         this.zoomInBtn = document.getElementById('zoom-in');
         this.zoomOutBtn = document.getElementById('zoom-out');
-        this.addBtn = document.getElementById('add');
-        this.removeBtn = document.getElementById('remove');
         
         this.scale = 1;
         this.minScale = 1;
@@ -24,9 +22,6 @@ class ImageEditor {
     init() {
         this.zoomInBtn.addEventListener('click', () => this.zoomIn());
         this.zoomOutBtn.addEventListener('click', () => this.zoomOut());
-
-        this.addBtn.addEventListener('click', () => this.addImage());
-        this.removeBtn.addEventListener('click', () => this.removeImage());
         
         this.wrapper.addEventListener('mousedown', this.startDrag.bind(this));
         this.wrapper.addEventListener('mousemove', this.drag.bind(this));
@@ -35,66 +30,9 @@ class ImageEditor {
         
         this.wrapper.addEventListener('touchstart', this.startDragTouch.bind(this));
         this.wrapper.addEventListener('touchmove', this.dragTouch.bind(this));
-        this.wrapper.addEventListener('touchend', this.endDrag.bind(this));      
-        
-        this.updateButtonsState();
+        this.wrapper.addEventListener('touchend', this.endDrag.bind(this));        
     }
     
-    addImage() {
-        if (!this.image.parentNode) {
-            this.wrapper.appendChild(this.image);
-            this.resetImage();
-            this.updateButtonsState();
-        }
-    }
-    
-    removeImage() {
-        if (this.image.parentNode) {
-            this.image.remove();
-            this.resetWrapper();
-            this.updateButtonsState();
-        }
-    }
-
-    resetImage() {
-        this.scale = 1;
-        this.image.style.transform = 'scale(1)';
-        this.image.style.cursor = 'default';
-    }
-    
-    resetWrapper() {
-        this.wrapper.style.cursor = 'default';
-        this.wrapper.scrollLeft = 0;
-        this.wrapper.scrollTop = 0;
-    }
-
-    updateButtonsState() {
-        const hasImage = !!this.image.parentNode;
-        
-        this.zoomInBtn.disabled = !hasImage || this.scale == this.maxScale;
-        this.zoomOutBtn.disabled = !hasImage || this.scale == this.minScale;
-        
-        this.removeBtn.disabled = !hasImage;
-        
-        this.addBtn.disabled = hasImage;
-        
-        this.updateButtonStyles();
-    }
-
-    updateButtonStyles() {
-        const buttons = [this.zoomInBtn, this.zoomOutBtn, this.addBtn, this.removeBtn];
-        
-        buttons.forEach(btn => {
-            if (btn.disabled) {
-                btn.style.opacity = '0.5';
-                btn.style.cursor = 'not-allowed';
-            } else {
-                btn.style.opacity = '1';
-                btn.style.cursor = 'pointer';
-            }
-        });
-    }
-
     zoomIn() {
         if (this.scale < this.maxScale) {
             this.scale += this.zoomStep;
@@ -119,8 +57,6 @@ class ImageEditor {
             this.wrapper.style.cursor = 'default';
             this.image.style.cursor = 'default';
         }
-
-        this.updateButtonsState();
     }
     
     startDrag(e) {
@@ -185,5 +121,5 @@ class ImageEditor {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    new ImageEditor();
+    new ImageZoom();
 });

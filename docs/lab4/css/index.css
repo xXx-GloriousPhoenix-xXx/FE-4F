@@ -1,24 +1,101 @@
-.my-image {
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    flex-flow: column nowrap;
-    margin-bottom: 10px;
+:root {
+    --primarycol: royalblue;
+    --secondarycol: #1f1e4f;
 }
-.image-ref {
-    margin-bottom: 10px;
+*, *::before, *::after {
+    margin: 0;
+    box-sizing: border-box;
+}
+h3 {
+    text-align: center;
+}
+.html, body {
+    font-size: 16px;
+    font-family: 'EB Garamond';
+    color: var(--secondarycol);
+}
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 1em;
+    gap: 1em;
+}
+.text-header {
+    text-align: center;
+}
+.wrapper {
+    display: flex;
+    border-radius: 1em;
+}
+.all-width {
+    width: 100%;
+}
+.padded.wrapper {
+    flex-flow: row nowrap;
+    padding: 1em;
+}
+.education.wrapper,
+.interest.wrapper {
+    flex-flow: column nowrap;
+}
+.bordered {
+    border: 0.15em solid var(--primarycol);
+}
+.info.wrapper {
+    justify-content: start;
+    gap: 3em;
 }
 
-.image-editor {
-    display: flex;
-    justify-content: center;
-    flex-flow: column nowrap;
-    gap: 10px;
+.city.list {
+    gap: 1em;
 }
-.control-panel {
+.wrapper.text {
+    flex-flow: column nowrap;
+    height: 100%;
+}
+.photo.wrapper {
+    overflow: hidden;
+}
+img.photo {
+    width: 30dvw;
+}
+a.photo {
     display: flex;
-    flex-flow: row nowrap;
+}
+.indented {
+    text-indent: 1.5em;
+}
+.centered {
+    justify-content: center;
     align-items: center;
+}
+
+.image.wrapper {
+    min-width: 30dvw;
+    min-height: 40dvh;
+    overflow: hidden;
+    border: 0.15em solid var(--primarycol);
+}
+.wrapper.control {
     flex-flow: row nowrap;
-    gap: 10px;
+    gap: 1em;
+}
+.wrapper.editor {
+    gap: 1em;
+    flex-flow: column nowrap;
+}
+button.control {
+    border: 0.15em solid var(--secondarycol);
+    color: var(--secondarycol);
+    background-color: white;
+    padding: 0.5em 1em;
+    border-radius: 1em;
+    transition: 100ms;
+    cursor: pointer;
+    width: 7em;
+}
+button.control:hover {
+    background-color: var(--secondarycol);
+    border-color: var(--primarycol);
+    color: var(--primarycol);
 }

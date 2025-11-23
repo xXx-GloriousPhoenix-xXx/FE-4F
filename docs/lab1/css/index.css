@@ -18,6 +18,9 @@ body {
     height: 100dvh;
     padding: 1em;
 }
+.text-header {
+    text-align: center;
+}
 .wrapper {
     display: flex;
     border-radius: 1em;
