@@ -1,10 +1,18 @@
 import './App.css';
 
-import Main from './pages/Main/Main';
+import Header from './components/Header/Header';
+import Content from './components/Content/Content';
+import Image from './components/Image/Image';
+import Store from './components/Store/Store';
 
 function App() {
     return (
-        <Main/>
+        <div className="App">
+            <Header/>
+            <Content/>
+            <Image/>
+            <Store/>
+        </div>
     );
 }
 

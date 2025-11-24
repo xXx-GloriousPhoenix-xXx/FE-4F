@@ -1,17 +1,50 @@
-import cl from './Header.module.css'
+import cl from './Header.module.css';
 
-import ColorSwapper from "../ColorSwapper/ColorSwapper";
+import Education from '../Education/Education';
+import AboutList from '../AboutList/AboutList';
+import Recolorer from '../Recolorer/Recolorer';
 
-const Header = ({ clickColor, clickBgColor }) => {
-    return (  
-        <div className={cl.Header}>
-            <h2 className={cl.Name}>Приходько Роман Юрійович</h2>
-            <p>Народився 09.01.2006 у місті Краматорськ</p>
-            <ColorSwapper clickColor={clickColor} clickBgColor={clickBgColor}>
-                Базова освіта - Краматорський ліцей №35 імені В. Шеймана
-                <br/>
-                Вища освіта - НТУУ "КПІ імені Ігоря Сікорського"
-            </ColorSwapper>
+const Header = () => {
+    const defaultColors = {
+        bg: 'transparent',
+        fg: 'var(--secondarycol)'
+    };
+    const newColors = {
+        bg: 'var(--secondarycol)',
+        fg: 'var(--primarycol)'
+    };
+
+    return (
+        <div className={cl.Wrapper}>
+            <Education
+                defaultColors={defaultColors}
+                newColors={newColors}
+            />
+            <AboutList 
+                elementList={[
+                    "Малювання",
+                    "Програмування",
+                    "Відеоігри"
+                ]}
+                recolorer={
+                    <Recolorer
+                        defaultColors={defaultColors}
+                        newColors={newColors}
+                    >
+                        <h3>Хобі</h3>
+                    </Recolorer>
+                }
+                isOrdered={false}
+            />
+            <AboutList
+                listName="Улюблені фільми"
+                elementList={[
+                    "Твоє ім'я",
+                    "Форма голосу",
+                    "Дитя погоди"
+                ]}
+                isOrdered={true}
+            />
         </div>
     );
 }

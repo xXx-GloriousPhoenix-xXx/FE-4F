@@ -1,28 +1,32 @@
-.ImageWrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    gap: 1em;
-}
 .Wrapper {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    flex-flow: column nowrap;
+    border: 0.15em solid var(--primarycol);
+    padding: 1em;
+    border-radius: 1em;
 }
-.Image {
-    width: 60%;
-}
-.TextWrapper {
+.Editor {
     display: flex;
     flex-flow: column nowrap;
-    text-align: left;
-
-    padding: 1em;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
 }
-.Paragraph{
-    text-indent: 2em;
-    text-align: justify;
-    margin: 10px 0;
+.Image {
+    display: flex;
+    width: 30dvw;
+    height: 40dvh;
+    overflow: hidden;
+    border-radius: 1em;
+    border: 0.15em solid var(--primarycol);
+}
+.Image > * {
+    width: 100%;
+}
+.Control {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 1em;
 }

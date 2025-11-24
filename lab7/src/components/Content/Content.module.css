@@ -1,7 +1,22 @@
 .Wrapper {
     display: flex;
-    justify-content: center;
-    flex-flow: column nowrap;
-
+    flex-flow: row nowrap;
+    width: 100%;
+    border: 0.15em solid var(--primarycol);
+    border-radius: 1em;
     padding: 1em;
+    gap: 1em;
+}
+.Text {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.Image {
+    display: flex;
+}
+.Image > * {
+    width: 30dvw;
+    border-radius: 1em;
+    border: 0.15em solid var(--primarycol);
 }

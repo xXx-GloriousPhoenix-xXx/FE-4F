@@ -1,0 +1,15 @@
+.Button {
+    padding: 0.5em 1em;
+    background-color: transparent;
+    border: 0.15em solid var(--secondarycol);
+    border-radius: 1em;
+    color: var(--secondarycol);
+    cursor: pointer;
+    transition: 100ms;
+    width: 7em;
+}
+.Button:hover {
+    color: var(--primarycol);
+    border-color: var(--primarycol);
+    background-color: var(--secondarycol);
+}

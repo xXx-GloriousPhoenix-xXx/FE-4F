@@ -1,9 +1,10 @@
-.Header {
+.Wrapper {
     display: flex;
-    justify-content: center;
-    flex-flow: column nowrap;
+    flex-flow: row nowrap;
+    align-items: center;
+    width: 100%;
+    gap: 3em;
     padding: 1em;
-}
-.Name {
-    margin: 0.25em 0;
+    border: 0.15em solid var(--primarycol);
+    border-radius: 1em;
 }
