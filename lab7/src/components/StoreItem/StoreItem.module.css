@@ -8,7 +8,7 @@
     border: 0.15em solid var(--primarycol);
     border-radius: 1em;
     padding: 1em;
-    gap: 0.5em;
+    gap: 1em;
 }
 .Image {
     display: flex;
@@ -16,6 +16,18 @@
     align-items: center;
     width: 60%;
     aspect-ratio: 1;
+    position: relative;
+    margin-bottom: 1.5em;
+}
+.Wrapper p {
+    position: absolute;
+    bottom: -2em;
+    right: 0;
+    /* background-color: var(--secondarycol); */
+    color: var(--secondarycol);
+    padding: 0.25em 0.5em;
+    border-radius: 1em;
+    border: 0.15em solid var(--secondarycol);
 }
 .Image img {
     max-width: 100%;
@@ -23,14 +35,15 @@
 }
 .Button {
     padding: 0.5em 1em;
-    color: var(--primarycol);
-    border: 0.15em solid var(--primarycol);
+    color: var(--secondarycol);
+    border: 0.15em solid var(--secondarycol);
     background-color: transparent;
     transition: 100ms;
     cursor: pointer;
+    border-radius: 1em;
 }
 .Button:hover {
-    color: var(--secondarycol);
-    border-color: var(--secondarycol);
-    background-color: var(--primarycol);
+    color: var(--primarycol);
+    border-color: var(--primarycol);
+    background-color: var(--secondarycol);
 }
