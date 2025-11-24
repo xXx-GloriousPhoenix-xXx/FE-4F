@@ -8,6 +8,7 @@ const StoreItem = ({content}) => {
             </div>
             <h3>{content.name}</h3>
             <p>{content.price}</p>
+            <button className={cl.Button}>Додати до кошику</button>
         </div>
     );
 }
