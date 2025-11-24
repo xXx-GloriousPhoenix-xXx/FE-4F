@@ -14,7 +14,7 @@ class Content extends React.Component {
                     <p>Серце міста – майдан Свободи, вражаючий своїм масштабом та архітектурою. А Госпром, справжній символ конструктивізму, мовчазний свідок історії, і сьогодні дивує своєю могутністю. Харківчани пишаються своїми парками – Шевченківським садом, садом ім. Т. Шевченка, лісопарком – улюбленими місцями відпочинку.</p>
                 </div>
                 <div className={cl.Image}>
-                    <img src="assets/img/kharkiv.jpg" alt="kharkiv" />
+                    <img src={`${process.env.PUBLIC_URL}/assets/img/kharkiv.jpg`} alt="kharkiv" />
                 </div>
             </div>
         );

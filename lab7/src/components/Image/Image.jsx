@@ -24,8 +24,6 @@ const Image = () => {
             left: imageRect.left - wrapperRect.left,
             top: imageRect.top - wrapperRect.top
         };
-        
-        console.log('Default position saved:', defaultPosition.current);
     }, [hasImage]);
 
     const handleWheel = useCallback((e) => {
@@ -99,7 +97,7 @@ const Image = () => {
                     {hasImage && (
                         <img 
                             ref={imageRef}
-                            src="assets/img/kharkiv.jpg" 
+                            src={`${process.env.PUBLIC_URL}/assets/img/kharkiv.jpg`}
                             alt="kharkiv" 
                         />
                     )}
