@@ -99,7 +99,7 @@ const Image = () => {
                     {hasImage && (
                         <img 
                             ref={imageRef}
-                            src="/assets/img/kharkiv.jpg" 
+                            src="assets/img/kharkiv.jpg" 
                             alt="kharkiv" 
                         />
                     )}
