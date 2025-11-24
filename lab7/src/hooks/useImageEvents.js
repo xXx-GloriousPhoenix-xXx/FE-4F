@@ -9,8 +9,7 @@ export const useImageEvents = ({
     drag,
     endDrag,
     startDragTouch,
-    dragTouch,
-    handleWheel
+    dragTouch
 }) => {
     useEffect(() => {
         const wrapper = wrapperRef.current;
@@ -18,18 +17,15 @@ export const useImageEvents = ({
 
         const handleMouseDown = (e) => startDrag(e, wrapperRef);
         const handleTouchStart = (e) => startDragTouch(e, wrapperRef);
-        const handleWheelEvent = (e) => handleWheel(e);
 
         wrapper.addEventListener('mousedown', handleMouseDown);
         wrapper.addEventListener('touchstart', handleTouchStart);
-        wrapper.addEventListener('wheel', handleWheelEvent, { passive: false });
 
         return () => {
             wrapper.removeEventListener('mousedown', handleMouseDown);
             wrapper.removeEventListener('touchstart', handleTouchStart);
-            wrapper.removeEventListener('wheel', handleWheelEvent);
         };
-    }, [wrapperRef, startDrag, startDragTouch, handleWheel]);
+    }, [wrapperRef, startDrag, startDragTouch]);
 
     useEffect(() => {
         if (!isDragging) return;

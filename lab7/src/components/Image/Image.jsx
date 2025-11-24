@@ -26,18 +26,6 @@ const Image = () => {
         };
     }, [hasImage]);
 
-    const handleWheel = useCallback((e) => {
-        if (!hasImage) return;
-        
-        e.preventDefault();
-        
-        if (e.deltaY < 0) {
-            zoomIn();
-        } else {
-            zoomOut();
-        }
-    }, [hasImage, zoomIn, zoomOut]);
-
     const addImage = useCallback(() => {
         setHasImage(true);
         resetZoom();
@@ -79,8 +67,7 @@ const Image = () => {
         drag,
         endDrag,
         startDragTouch,
-        dragTouch,
-        handleWheel
+        dragTouch
     });
 
     const isAvailable = {
