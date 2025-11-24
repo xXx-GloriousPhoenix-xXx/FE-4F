@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/FE-4F/static/css/main.c4f2feda.css",
-    "main.js": "/FE-4F/static/js/main.4adc2689.js",
-    "index.html": "/FE-4F/index.html",
-    "main.c4f2feda.css.map": "/FE-4F/static/css/main.c4f2feda.css.map",
-    "main.4adc2689.js.map": "/FE-4F/static/js/main.4adc2689.js.map"
+    "main.css": "/FE-4F/lab7/static/css/main.c4f2feda.css",
+    "main.js": "/FE-4F/lab7/static/js/main.4adc2689.js",
+    "index.html": "/FE-4F/lab7/index.html",
+    "main.c4f2feda.css.map": "/FE-4F/lab7/static/css/main.c4f2feda.css.map",
+    "main.4adc2689.js.map": "/FE-4F/lab7/static/js/main.4adc2689.js.map"
   },
   "entrypoints": [
     "static/css/main.c4f2feda.css",
