@@ -9,7 +9,7 @@ const item4 = {
 
 const col1 = 'var(--primarycol)';
 const col2 = 'var(--secondarycol)';
-const col3 = 'white';
+const col3 = 'transparent';
 
 const swapColor = (item) => {
     if (!item.state) {
