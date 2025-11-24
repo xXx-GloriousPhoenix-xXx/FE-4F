@@ -23,7 +23,6 @@
     position: absolute;
     bottom: -2em;
     right: 0;
-    /* background-color: var(--secondarycol); */
     color: var(--secondarycol);
     padding: 0.25em 0.5em;
     border-radius: 1em;
